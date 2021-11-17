@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic);
+.svg-common--arrow-left-dims {
+  width: 8px;
+  height: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(200, 200, 200, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+}
+
+html, body {
+  font: 15px "PT Sans", Arial, sans-serif;
+  color: #2e3640;
+}
+
+[contenteditable], input, textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  outline: 0;
+  line-height: 20px;
+}
+
+.card_holder {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  width: 100vw;
+  height: 100vh;
+}
+.card_holder__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #fff;
+}
+.card_holder__fields {
+  overflow-y: hidden;
+  min-width: 340px;
+  max-width: 50%;
+  width: 34%;
+  flex-shrink: 0;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+  font-size: 15px;
+}
+.card_holder__fields__top-back {
+  padding: 10px;
+  position: absolute;
+  left: 1px;
+  top: 14px;
+  cursor: pointer;
+  z-index: 32;
+}
+.card_holder__fields__top-back svg {
+  fill: #fff;
+  opacity: 0.2;
+}
+.card_holder__fields__top {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 15px 29px 0;
+  margin: 0 -30px;
+}
+.card_holder__fields-block {
+  position: relative;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  margin-bottom: 1px;
+}
+.card_holder__fields-block .card-entity-form {
+  padding: 0 30px;
+}
+.card_holder__fields-block .card-entity-form__fields {
+  width: calc(100% + 1px);
+  box-sizing: border-box;
+  padding-top: 13px;
+}
+.card_holder__fields-block .card-entity-form__top {
+  background: #203d49;
+  position: relative;
+  margin: -13px -30px 0;
+  padding-bottom: 19px;
+  height: 185px;
+}
+.card_holder__fields-block .card-entity-form__top-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -29px;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.linked-forms__group-wrapper {
+  margin-top: 13px;
+}
+
+.linked-form__field {
+  position: relative;
+  display: flex;
+}
+.linked-form__field__label {
+  line-height: 1;
+  white-space: nowrap;
+  color: #848c90;
+  font-size: 15px;
+  overflow-x: hidden;
+  display: flex;
+  vertical-align: top;
+  width: calc(38.37% - 15px);
+  margin-right: 15px;
+  box-sizing: border-box;
+  height: 32px;
+  position: relative;
+  align-items: center;
+}
+.linked-form__field__value {
+  display: inline-block;
+  font-size: 15px;
+  color: #313942;
+  position: relative;
+  width: 61.63%;
+}
+.linked-form__field__value .text-input {
+  padding: 0;
+  height: 32px;
+  border-radius: 0;
+  width: 100%;
+  font-size: 15px;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-left: 0;
+  border-right: 0;
+  max-width: 299px;
+}
+
+/*# sourceMappingURL=styles.css.map */
